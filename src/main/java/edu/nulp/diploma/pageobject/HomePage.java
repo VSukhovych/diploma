@@ -18,6 +18,9 @@ public class HomePage extends BasePage {
     @FindBy(xpath = ".//*[@href='/public-information']")
     public WebElement publicInformationLink;
 
+    @FindBy(id = "tm-panel-news-link")
+    public WebElement pressCenterMenuButton;
+
     public HomePage() {
         wait.until(ExpectedConditions.visibilityOf(hotLineLink));
     }
@@ -36,5 +39,9 @@ public class HomePage extends BasePage {
 
     public WebElement getPublicInformationLink() {
         return publicInformationLink;
+    }
+
+    public WebElement getPressCenterMenuButton() {
+        return pressCenterMenuButton;
     }
 }

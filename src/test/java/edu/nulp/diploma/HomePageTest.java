@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 public class HomePageTest extends BaseTest {
 
     @Story("Home page")
-    @Test(description = "Test for home page header", groups = "regression")
+    @Test(description = "Test for home page header", groups = {"regression", "smoke"})
     public void basicHomePageTest() {
         new NavigationPO().navigateToUrl(LvivCityUrls.LVIV_CITY_BASE_URL);
         var homeLogic = new HomeLogic();
