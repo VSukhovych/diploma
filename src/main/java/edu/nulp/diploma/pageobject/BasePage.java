@@ -1,7 +1,7 @@
 package edu.nulp.diploma.pageobject;
 
 import edu.nulp.diploma.webdriver.DriverRepository;
-import edu.nulp.diploma.constant.TestDataValues;
+import edu.nulp.diploma.constant.TestConstantValues;
 import org.openqa.selenium.By;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.PageFactory;
@@ -16,7 +16,7 @@ public class BasePage {
 
     public BasePage() {
         driver = DriverRepository.DRIVERS.get();
-        wait = new WebDriverWait(driver, Duration.ofSeconds(TestDataValues.WAIT_VALUE));
+        wait = new WebDriverWait(driver, Duration.ofSeconds(TestConstantValues.WAIT_VALUE));
 
         wait.until(webDriver -> driver.executeScript("return document.readyState").equals("complete"));
         if (!driver.findElements(By.id("IPEbgCover790")).isEmpty()) {

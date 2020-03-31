@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-import static edu.nulp.diploma.constant.TestDataValues.WAIT_VALUE;
+import static edu.nulp.diploma.constant.TestConstantValues.WAIT_VALUE;
 
 public class DriverAlert {
 

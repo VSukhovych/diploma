@@ -1,6 +1,6 @@
 package edu.nulp.diploma.utils;
 
-import edu.nulp.diploma.constant.TestDataValues;
+import edu.nulp.diploma.constant.TestConstantValues;
 import edu.nulp.diploma.logger.LogListener;
 import io.qameta.allure.Step;
 
@@ -28,8 +28,8 @@ public final class UrlUtil {
 
             con.setRequestMethod("GET");
 
-            con.setConnectTimeout(TestDataValues.TIME_OUT_VALUE);
-            con.setReadTimeout(TestDataValues.TIME_OUT_VALUE);
+            con.setConnectTimeout(TestConstantValues.TIME_OUT_VALUE);
+            con.setReadTimeout(TestConstantValues.TIME_OUT_VALUE);
 
             log.info("Validate url: {}", url);
             check = (con.getResponseCode() == HttpURLConnection.HTTP_OK);

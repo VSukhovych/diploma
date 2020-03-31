@@ -1,6 +1,6 @@
 package edu.nulp.diploma.utils;
 
-import edu.nulp.diploma.constant.EndpointConstants;
+import edu.nulp.diploma.constant.LvivCityUrls;
 import io.qameta.allure.Step;
 
 public class ConfigUtil {
@@ -13,7 +13,7 @@ public class ConfigUtil {
         String decodedUrl = UrlUtil.decodeValue(currentUrl);
         String anonymousStorage;
         String storage;
-        switch (EndpointConstants.getEnvName()) {
+        switch (LvivCityUrls.getEnvName()) {
             case "test":
                 anonymousStorage = "https://contenttest.ec2.avery.com/WorkingDir/temp/";
                 break;
