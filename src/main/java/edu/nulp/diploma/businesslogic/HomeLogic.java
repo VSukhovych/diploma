@@ -30,4 +30,10 @@ public class HomeLogic {
     public String getPublicInfoLinkText() {
         return homePage.getPublicInformationLink().getText();
     }
+
+    @Step("Open Press center menu")
+    public PressCenterMenuLogic openPressCenterMenu() {
+        homePage.getPressCenterMenuButton().click();
+        return new PressCenterMenuLogic();
+    }
 }

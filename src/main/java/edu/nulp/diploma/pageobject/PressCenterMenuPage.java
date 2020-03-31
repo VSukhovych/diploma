@@ -5,25 +5,59 @@ import org.openqa.selenium.support.FindBy;
 
 public class PressCenterMenuPage extends BasePage {
 
-    @FindBy(xpath = ".//*[@href='/news']")
+    @FindBy(xpath = ".//*[@href='/news']/../../../../*")
+    private WebElement pressHeader;
+
+    @FindBy(xpath = ".//*[alt='Логотип Львівської міської ради']/../..//*[@href='/news']")
     private WebElement newsLink;
 
-    @FindBy(xpath = ".//*[@href='/events']")
+    @FindBy(xpath = ".//*[alt='Логотип Львівської міської ради']/../..//*[@href='/events']")
     private WebElement eventsLink;
 
-    @FindBy(xpath = ".//*[@href='/photos']")
+    @FindBy(xpath = ".//*[alt='Логотип Львівської міської ради']/../..//*[@href='/photos']")
     private WebElement photosLink;
 
-    @FindBy(xpath = ".//*[@href='/video']")
+    @FindBy(xpath = ".//*[alt='Логотип Львівської міської ради']/../..//*[@href='/video']")
     private WebElement videoLink;
 
-    @FindBy(xpath = ".//*[@href='/announcement']")
+    @FindBy(xpath = ".//*[alt='Логотип Львівської міської ради']/../..//*[@href='/announcement']")
     private WebElement announcementLink;
 
-    @FindBy(xpath = ".//*[@href='/public-consultation']")
+    @FindBy(xpath = ".//*[alt='Логотип Львівської міської ради']/../..//*[@href='/public-consultation']")
     private WebElement consultationLink;
 
-    @FindBy(xpath = ".//*[@href='/public-hearings']")
+    @FindBy(xpath = ".//*[alt='Логотип Львівської міської ради']/../..//*[@href='/public-hearings']")
     private WebElement publicHearingsLink;
 
+    public WebElement getPressHeader() {
+        return pressHeader;
+    }
+
+    public WebElement getNewsLink() {
+        return newsLink;
+    }
+
+    public WebElement getEventsLink() {
+        return eventsLink;
+    }
+
+    public WebElement getPhotosLink() {
+        return photosLink;
+    }
+
+    public WebElement getVideoLink() {
+        return videoLink;
+    }
+
+    public WebElement getAnnouncementLink() {
+        return announcementLink;
+    }
+
+    public WebElement getConsultationLink() {
+        return consultationLink;
+    }
+
+    public WebElement getPublicHearingsLink() {
+        return publicHearingsLink;
+    }
 }
