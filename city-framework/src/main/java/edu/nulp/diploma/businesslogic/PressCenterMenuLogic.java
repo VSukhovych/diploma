@@ -1,7 +1,6 @@
 package edu.nulp.diploma.businesslogic;
 
-import edu.nulp.diploma.pageobject.HomePage;
-import edu.nulp.diploma.pageobject.PressCenterMenuPage;
+import edu.nulp.diploma.pageobject.menu.PressCenterMenuPage;
 import io.qameta.allure.Step;
 
 public class PressCenterMenuLogic {

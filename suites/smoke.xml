@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="regressionTest" verbose="1">
+    <test name="Regression test suite">
+        <groups>
+            <run>
+                <include name="smoke"/>
+            </run>
+        </groups>
+        <packages>
+            <package name="edu.nulp.diploma.*"/>
+        </packages>
+    </test>
+</suite>

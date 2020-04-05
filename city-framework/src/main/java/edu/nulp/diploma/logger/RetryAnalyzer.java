@@ -7,7 +7,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 import java.util.regex.Pattern;
 
 public class RetryAnalyzer implements IRetryAnalyzer {
-    private static int maxRetryCount = 0;
+    private static int maxRetryCount = 2;
 
     private AtomicInteger count = new AtomicInteger(maxRetryCount);
 
