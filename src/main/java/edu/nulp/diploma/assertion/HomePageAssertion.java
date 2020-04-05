@@ -1,7 +1,6 @@
 package edu.nulp.diploma.assertion;
 
 import edu.nulp.diploma.businesslogic.HomeLogic;
-import org.testng.Assert;
 import org.testng.asserts.SoftAssert;
 
 public final class HomePageAssertion {

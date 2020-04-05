@@ -1,18 +1,17 @@
 package edu.nulp.diploma.pageobject;
 
 import edu.nulp.diploma.constant.LvivCityUrls;
+import edu.nulp.diploma.constant.TestConstantValues;
 import edu.nulp.diploma.logger.LogListener;
 import edu.nulp.diploma.webdriver.DriverAlert;
 import edu.nulp.diploma.webdriver.DriverRepository;
-import edu.nulp.diploma.constant.TestConstantValues;
-import org.openqa.selenium.*;
+import org.openqa.selenium.Dimension;
+import org.openqa.selenium.NoAlertPresentException;
+import org.openqa.selenium.UnhandledAlertException;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
-
-import static edu.nulp.diploma.constant.TestConstantValues.BROWSER_WINDOW_HEIGHT;
-import static java.util.stream.Collectors.joining;
 
 public class NavigationPO {
 
