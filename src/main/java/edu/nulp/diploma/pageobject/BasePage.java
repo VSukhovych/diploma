@@ -1,7 +1,7 @@
 package edu.nulp.diploma.pageobject;
 
-import edu.nulp.diploma.webdriver.DriverRepository;
 import edu.nulp.diploma.constant.TestConstantValues;
+import edu.nulp.diploma.webdriver.DriverRepository;
 import org.openqa.selenium.By;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.PageFactory;
