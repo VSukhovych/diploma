@@ -63,7 +63,7 @@ public class EconomyPage {
         return tendersLink;
     }
 
-    public WebElement geteProcurementLink() {
+    public WebElement getProcurementLink() {
         return eProcurementLink;
     }
 

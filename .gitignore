@@ -1,7 +1,11 @@
 .allure/*
 .idea/*
-atframework.iml
-at-framework.iml
 target/*
 libs/*
 allure-results/*
+/.mvn/wrapper/maven-wrapper.jar
+/.mvn/wrapper/maven-wrapper.properties
+/.mvn/wrapper/MavenWrapperDownloader.java
+/.mvn/jvm.config
+/lvivcity-framework.iml
+/src/main/resources/logback.xml
