@@ -10,4 +10,12 @@ public class CasAroundLvivPage {
 
     @FindBy(xpath = ".//*[@id='tm-panel-city']//*[@href='/services/directory-services-smt-rudne']")
     private WebElement casRudneLink;
+
+    public WebElement getCasAroundLvivHeader() {
+        return casAroundLvivHeader;
+    }
+
+    public WebElement getCasRudneLink() {
+        return casRudneLink;
+    }
 }

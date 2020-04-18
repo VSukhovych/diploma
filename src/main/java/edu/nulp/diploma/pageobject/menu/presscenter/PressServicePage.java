@@ -1,77 +1,64 @@
 package edu.nulp.diploma.pageobject.menu.presscenter;
 
+import edu.nulp.diploma.pageobject.BasePage;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class PressServicePage {
+public class PressServicePage extends BasePage {
 
-    @FindBy(xpath = ".//*[@id='tm-panel-news']/div/div/following-sibling::div//*[@class='uk-h3']")
-    private WebElement newRubricHeader;
+    @FindBy(xpath = ".//*[@href='/news']/../../../../*")
+    private WebElement pressHeader;
 
-    @FindBy(xpath = ".//*[@href='/news/actual']")
-    private WebElement actualNewsLink;
+    @FindBy(xpath = ".//*[@id='tm-panel-news']//*[@href='/news']")
+    private WebElement newsLink;
 
-    @FindBy(xpath = ".//*[@href='/news/government']")
-    private WebElement governmentNewsLink;
+    @FindBy(xpath = ".//*[@id='tm-panel-news']//*[@href='/events']")
+    private WebElement eventsLink;
 
-    @FindBy(xpath = ".//*[@href='/news/city/osbb']")
-    private WebElement osbbNewsLink;
+    @FindBy(xpath = ".//*[@id='tm-panel-news']//*[@href='/photos']")
+    private WebElement photosLink;
 
-    @FindBy(xpath = ".//*[@href='/news/city/tsnap']")
-    private WebElement tsnapNewsLink;
+    @FindBy(xpath = ".//*[@id='tm-panel-news']//*[@href='/video']")
+    private WebElement videoLink;
 
-    @FindBy(xpath = ".//*[@href='/news/city/lviv-changes']")
-    private WebElement cityChangesNewsLink;
+    @FindBy(xpath = ".//*[@id='tm-panel-news']//*[@href='/announcement']")
+    private WebElement announcementLink;
 
-    @FindBy(xpath = ".//*[@href='/news/city/land-policy']")
-    private WebElement landPolicyNewsLink;
+    @FindBy(xpath = ".//*[@id='tm-panel-news']//*[@href='/public-consultation']")
+    private WebElement consultationLink;
 
-    @FindBy(xpath = ".//*[@href='/news/city/housing-and-utilities']")
-    private WebElement housingNewsLink;
+    @FindBy(xpath = ".//*[@id='tm-panel-news']//*[@href='/public-hearings']")
+    private WebElement publicHearingsLink;
 
-    @FindBy(xpath = ".//*[@href='/news/city/municipal-property']")
-    private WebElement municipalPropertyNewsLink;
-
-    @FindBy(xpath = ".//*[@href='/news/city/transport']")
-    private WebElement transportNewsLink;
-
-    public WebElement getNewRubricHeader() {
-        return newRubricHeader;
+    public WebElement getPressHeader() {
+        return pressHeader;
     }
 
-    public WebElement getActualNewsLink() {
-        return actualNewsLink;
+    public WebElement getNewsLink() {
+        return newsLink;
     }
 
-    public WebElement getGovernmentNewsLink() {
-        return governmentNewsLink;
+    public WebElement getEventsLink() {
+        return eventsLink;
     }
 
-    public WebElement getOsbbNewsLink() {
-        return osbbNewsLink;
+    public WebElement getPhotosLink() {
+        return photosLink;
     }
 
-    public WebElement getTsnapNewsLink() {
-        return tsnapNewsLink;
+    public WebElement getVideoLink() {
+        return videoLink;
     }
 
-    public WebElement getCityChangesNewsLink() {
-        return cityChangesNewsLink;
+    public WebElement getAnnouncementLink() {
+        return announcementLink;
     }
 
-    public WebElement getLandPolicyNewsLink() {
-        return landPolicyNewsLink;
+    public WebElement getConsultationLink() {
+        return consultationLink;
     }
 
-    public WebElement getHousingNewsLink() {
-        return housingNewsLink;
-    }
-
-    public WebElement getMunicipalPropertyNewsLink() {
-        return municipalPropertyNewsLink;
-    }
-
-    public WebElement getTransportNewsLink() {
-        return transportNewsLink;
+    public WebElement getPublicHearingsLink() {
+        return publicHearingsLink;
     }
 }
