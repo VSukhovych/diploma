@@ -26,33 +26,33 @@ public class AboutLvivLogic {
         return aboutLvivPage.getStrategyLink().getText();
     }
 
-    @Step("Get  link text")
-    public String getLinkText() {
-        return aboutLvivPage.getText();
+    @Step("Get Brand Book link text")
+    public String getBrandBookLinkText() {
+        return aboutLvivPage.getBrandBookLink().getText();
     }
 
-    @Step("Get  link text")
-    public String getLinkText() {
-        return aboutLvivPage.getText();
+    @Step("Get Tourism link text")
+    public String getTourismLinkText() {
+        return aboutLvivPage.getTravelLink().getText();
     }
 
-    @Step("Get  link text")
-    public String getLinkText() {
-        return aboutLvivPage.getText();
+    @Step("Get History link text")
+    public String getHistoryLinkText() {
+        return aboutLvivPage.getLvivHistoryLink().getText();
     }
 
-    @Step("Get  link text")
-    public String getLinkText() {
-        return aboutLvivPage.getText();
+    @Step("Get Researchers link text")
+    public String getResearchersLinkText() {
+        return aboutLvivPage.getScientistsLink().getText();
     }
 
-    @Step("Get  link text")
-    public String getLinkText() {
-        return aboutLvivPage.getText();
+    @Step("Get Lviv Catalog link text")
+    public String getLvivCatalogLinkText() {
+        return aboutLvivPage.getCatalogLink().getText();
     }
 
-    @Step("Get  link text")
-    public String getLinkText() {
-        return aboutLvivPage.getText();
+    @Step("Get Statistic link text")
+    public String getStatisticLinkText() {
+        return aboutLvivPage.getUkrStatLink().getText();
     }
 }
