@@ -11,6 +11,9 @@ public class CitizensApplicationPage {
     @FindBy(xpath = ".//*[@id='tm-panel-lmr']//*[@href='/services/hot-line']")
     private WebElement hotLineLink;
 
+    @FindBy(xpath = ".//*[@id='tm-panel-lmr']//*[@href='/services/application']")
+    private WebElement applicationLink;
+
     @FindBy(xpath = ".//*[@id='tm-panel-lmr']//*[@href='/services/docs-checker']")
     private WebElement docsCheckerLink;
 
@@ -23,6 +26,10 @@ public class CitizensApplicationPage {
 
     public WebElement getHotLineLink() {
         return hotLineLink;
+    }
+
+    public WebElement getApplicationLink() {
+        return applicationLink;
     }
 
     public WebElement getDocsCheckerLink() {

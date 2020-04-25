@@ -39,7 +39,7 @@ public class LmrStructurePage {
     private WebElement committeeLink;
 
     @FindBy(xpath = ".//*[@id='tm-panel-lmr']//*[@href='/lmr/office']")
-    private WebElement officeLink;
+    private WebElement managementLink;
 
     @FindBy(xpath = ".//*[@id='tm-panel-lmr']//*[@href='/lmr/district-administration']")
     private WebElement districtAdministrationsLink;
@@ -100,8 +100,8 @@ public class LmrStructurePage {
         return committeeLink;
     }
 
-    public WebElement getOfficeLink() {
-        return officeLink;
+    public WebElement getManagementLink() {
+        return managementLink;
     }
 
     public WebElement getDistrictAdministrationsLink() {
