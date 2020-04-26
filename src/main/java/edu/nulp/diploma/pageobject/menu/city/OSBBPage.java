@@ -3,10 +3,10 @@ package edu.nulp.diploma.pageobject.menu.city;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class OSSBPage {
+public class OSBBPage {
 
     @FindBy(xpath = ".//*[@id='tm-panel-city']//*[text()='ОСББ та майно']")
-    private WebElement ossbHeader;
+    private WebElement osbbHeader;
 
     @FindBy(xpath = ".//*[@id='tm-panel-city']//*[@href='/portal/osbb']")
     private WebElement osbbLink;
@@ -14,8 +14,8 @@ public class OSSBPage {
     @FindBy(xpath = ".//*[@id='tm-panel-city']//*[@href='/public-information/offices/upravlinnia-komunalnoi-vlasnosti/nerukhome-maino']")
     private WebElement propertyLink;
 
-    public WebElement getOssbHeader() {
-        return ossbHeader;
+    public WebElement getOsbbHeader() {
+        return osbbHeader;
     }
 
     public WebElement getOsbbLink() {

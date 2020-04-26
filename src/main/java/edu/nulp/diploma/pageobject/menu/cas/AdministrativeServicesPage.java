@@ -20,4 +20,23 @@ public class AdministrativeServicesPage {
     @FindBy(xpath = ".//*[@id='tm-panel-city']//*[@href='/services/results']")
     private WebElement resultsLink;
 
+    public WebElement getAdminServicesHeader() {
+        return adminServicesHeader;
+    }
+
+    public WebElement getCasLink() {
+        return casLink;
+    }
+
+    public WebElement getContactsLink() {
+        return contactsLink;
+    }
+
+    public WebElement getWriteToCasLink() {
+        return writeToCasLink;
+    }
+
+    public WebElement getResultsLink() {
+        return resultsLink;
+    }
 }

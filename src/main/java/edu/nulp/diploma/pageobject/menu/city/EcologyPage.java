@@ -39,7 +39,7 @@ public class EcologyPage {
         return radiationControlLink;
     }
 
-    public WebElement getBaterryLink() {
+    public WebElement getBatteryLink() {
         return baterryLink;
     }
 
