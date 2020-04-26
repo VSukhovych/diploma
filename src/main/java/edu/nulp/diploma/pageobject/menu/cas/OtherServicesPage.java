@@ -12,7 +12,7 @@ public class OtherServicesPage {
     private WebElement fastServiceLink;
 
     @FindBy(xpath = ".//*[@id='tm-panel-city']//*[@href='/services/elektronni-posluhy']")
-    private WebElement eServiceLink;
+    private WebElement serviceLink;
 
     @FindBy(xpath = ".//*[@id='tm-panel-city']//*[@href='/services/pay']")
     private WebElement servicesPayLink;
@@ -29,8 +29,8 @@ public class OtherServicesPage {
         return fastServiceLink;
     }
 
-    public WebElement geteServiceLink() {
-        return eServiceLink;
+    public WebElement getServiceLink() {
+        return serviceLink;
     }
 
     public WebElement getServicesPayLink() {
