@@ -1,9 +1,10 @@
 package edu.nulp.diploma.pageobject.menu.presscenter;
 
+import edu.nulp.diploma.pageobject.BasePage;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class PressCenterPage {
+public class PressCenterPage extends BasePage {
 
     @FindBy(xpath = ".//*[@id='tm-panel-news']/div/following-sibling::div/div/following-sibling::div//*[@class='uk-h3']")
     private WebElement pressCenterHeader;

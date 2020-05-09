@@ -3,6 +3,7 @@ package edu.nulp.diploma.pageobject.menu.presscenter;
 import edu.nulp.diploma.pageobject.BasePage;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class PressServicePage extends BasePage {
 
@@ -31,6 +32,7 @@ public class PressServicePage extends BasePage {
     private WebElement publicHearingsLink;
 
     public WebElement getPressHeader() {
+        wait.until(ExpectedConditions.visibilityOf(pressHeader));
         return pressHeader;
     }
 

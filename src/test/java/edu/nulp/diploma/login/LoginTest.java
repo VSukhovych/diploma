@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 public class LoginTest {
 
     @Story("Login")
-    @Test(description = "Test for login functionality", groups = "regression")
+    @Test(enabled = false, description = "Test for login functionality", groups = "regression")
     public void basicHomePageTest() {
         new NavigationPO().navigateToUrl("https://city-adm.lviv.ua/");
         // open login page

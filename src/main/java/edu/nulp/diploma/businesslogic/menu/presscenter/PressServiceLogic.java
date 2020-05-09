@@ -48,6 +48,6 @@ public class PressServiceLogic {
 
     @Step("Get Public hearings link text")
     public String getPublicHearingsLinkText() {
-        return pressServicePage.getAnnouncementLink().getText();
+        return pressServicePage.getPublicHearingsLink().getText();
     }
 }

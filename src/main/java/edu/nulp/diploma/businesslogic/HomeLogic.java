@@ -1,6 +1,5 @@
 package edu.nulp.diploma.businesslogic;
 
-import edu.nulp.diploma.businesslogic.menu.presscenter.PressServiceLogic;
 import edu.nulp.diploma.pageobject.HomePage;
 import io.qameta.allure.Step;
 
@@ -33,8 +32,7 @@ public class HomeLogic {
     }
 
     @Step("Open Press center menu")
-    public PressServiceLogic openPressCenterMenu() {
+    public void openPressCenterMenu() {
         homePage.getPressCenterMenuButton().click();
-        return new PressServiceLogic();
     }
 }

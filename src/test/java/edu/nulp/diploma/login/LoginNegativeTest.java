@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 public class LoginNegativeTest {
 
     @Story("Login")
-    @Test(description = "Test for invalid login", groups = "regression")
+    @Test(enabled = false, description = "Test for invalid login", groups = "regression")
     public void basicHomePageTest() {
         new NavigationPO().navigateToUrl("https://city-adm.lviv.ua/");
         // open login page

@@ -12,8 +12,8 @@ public class NewsRubricLogic {
     }
 
     @Step("Get News Rubric header text")
-    public String getPressServiceHeaderText() {
-        return newsRubricPage.getNewRubricHeader().getText();
+    public String getNewsRubricHeaderText() {
+        return newsRubricPage.getNewsRubricHeader().getText();
     }
 
     @Step("Get Actual News link text")
@@ -28,7 +28,7 @@ public class NewsRubricLogic {
 
     @Step("Get City link text")
     public String getCityLinkText() {
-        return newsRubricPage.getCityChangesNewsLink().getText();
+        return newsRubricPage.getCityNewsLink().getText();
     }
 
     @Step("Get OSBB News link text")
