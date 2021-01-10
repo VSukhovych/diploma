@@ -1,9 +1,10 @@
 package edu.nulp.diploma.pageobject.menu.cas;
 
+import edu.nulp.diploma.pageobject.BasePage;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class AdministrativeServicesPage {
+public class AdministrativeServicesPage extends BasePage {
 
     @FindBy(xpath = ".//*[@id='tm-panel-city']//*[text()='Адміністративні послуги']")
     private WebElement adminServicesHeader;

@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 
 public class PressCenterPage extends BasePage {
 
-    @FindBy(xpath = ".//*[@id='tm-panel-news']/div/following-sibling::div/div/following-sibling::div//*[@class='uk-h3']")
+    @FindBy(xpath = "//*[@id='tm-panel-news-link']/span[text()='Прес-центр']")
     private WebElement pressCenterHeader;
 
     @FindBy(xpath = ".//*[@id='tm-panel-news']/div/following-sibling::div/div/following-sibling::div//*[@class='/press']")

@@ -48,7 +48,7 @@ public final class PressCenterMenuAssertion {
     public static void pressCenterTextCheck(PressCenterLogic pressCenterLogic) {
         var softAssert = new SoftAssert();
 
-        softAssert.assertEquals(pressCenterLogic.getPressCenterHeaderText(), "ПРЕС-ЦЕНТР", "Error - Press center header text is not correct");
+        softAssert.assertEquals(pressCenterLogic.getPressCenterHeaderText(), "Прес-центр", "Error - Press center header text is not correct");
         softAssert.assertEquals(pressCenterLogic.getPressCenterLmrLinkText(), "Прес-центр ЛМР", LINK_ERROR);
         softAssert.assertEquals(pressCenterLogic.getOfficialPageLinkText(), "Офіційна сторінка Прес-служби", LINK_ERROR);
         softAssert.assertEquals(pressCenterLogic.getLvivInternationalLinkText(), "Львів міжнародний", LINK_ERROR);

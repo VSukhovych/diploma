@@ -1,9 +1,10 @@
 package edu.nulp.diploma.pageobject.menu.city;
 
+import edu.nulp.diploma.pageobject.BasePage;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class AboutLvivPage {
+public class AboutLvivPage extends BasePage {
 
     @FindBy(xpath = ".//*[@id='tm-panel-city']//*[text()='Про Львів']")
     private WebElement aboutLvivHeader;
@@ -69,3 +70,6 @@ public class AboutLvivPage {
         return ukrStatLink;
     }
 }
+
+
+

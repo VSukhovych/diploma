@@ -18,11 +18,12 @@ public class NavigationPO {
     private RemoteWebDriver driver;
     private WebDriverWait wait;
 
-    public NavigationPO() {
+    public NavigationPO NavigationPO() {
         this.driver = DriverRepository.DRIVERS.get();
         this.wait = (WebDriverWait) new WebDriverWait(driver, Duration.ofSeconds(TestConstantValues.WAIT_VALUE))
                 .withTimeout(Duration.ofSeconds(5))
                 .pollingEvery(Duration.ofSeconds(1));
+        return this;
     }
 
     public void navigateToUrl(String url) {

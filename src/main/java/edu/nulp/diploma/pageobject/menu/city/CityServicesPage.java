@@ -1,9 +1,10 @@
 package edu.nulp.diploma.pageobject.menu.city;
 
+import edu.nulp.diploma.pageobject.BasePage;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class CityServicesPage {
+public class CityServicesPage extends BasePage {
 
     @FindBy(xpath = ".//*[@id='tm-panel-city']//*[text()='Міські сервіси']")
     private WebElement cityServicesHeader;

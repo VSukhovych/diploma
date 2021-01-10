@@ -1,9 +1,10 @@
 package edu.nulp.diploma.pageobject.menu.cas;
 
+import edu.nulp.diploma.pageobject.BasePage;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class CasServicesPage {
+public class CasServicesPage extends BasePage {
 
     @FindBy(xpath = ".//*[@id='tm-panel-city']//*[text()='Послуги ЦНАП']")
     private WebElement casServiceHeader;

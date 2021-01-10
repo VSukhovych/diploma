@@ -1,9 +1,10 @@
 package edu.nulp.diploma.pageobject.menu.citycouncil;
 
+import edu.nulp.diploma.pageobject.BasePage;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class PublicInformationPage {
+public class PublicInformationPage extends BasePage {
 
     @FindBy(xpath = ".//*[@id='tm-panel-lmr']//*[text()='Публічна інформація']")
     private WebElement publicInformationHeader;
